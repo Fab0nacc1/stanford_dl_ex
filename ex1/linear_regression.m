@@ -7,8 +7,7 @@ function [f,g] = linear_regression(theta, X,y)
   %   y - The target value for each example.  y(j) is the target for example j.
   %
   
-  m=size(X,2);
-  n=size(X,1);
+  [n, m]=size(X);
 
   f=0;
   g=zeros(size(theta));
